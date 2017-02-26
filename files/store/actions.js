@@ -1,7 +1,7 @@
 import actionBinder from 'redux-action-binder';
 
 import * as hello from '../hello/hello';
-// add other reducers
+// import all other ducks here
 
 const getBoundActions = actionBinder.getBoundActions;
 
