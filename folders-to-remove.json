@@ -3,5 +3,8 @@
   "src/components",
   "src/containers",
   "src/reducers",
-  "src/actions"
+  "src/actions",
+  "src/constants",
+  "src/utils",
+  "src/store"
 ]

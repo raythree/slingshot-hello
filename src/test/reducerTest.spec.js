@@ -1,9 +1,10 @@
-import { getBoundActions, resetActionBinder } from '../src/store/actions';
-import configureStore from '../src/store/configureStore';
+import { getBoundActions, resetActionBinder } from '../store/actions';
+import configureStore from '../store/configureStore';
 
 let dispatch;
 
 beforeEach(() => {
+  resetActionBinder();  
   let store = configureStore();
   dispatch = store.dispatch;
   console.log("store configured");

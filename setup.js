@@ -2,9 +2,11 @@ var copyFiles = require('copyfiles');
 var fs = require('fs');
 var exec = require('child_process').execSync;
 var rimraf = require('rimraf').sync;
+var async = require('async');
 
 var packages = require('./packages-to-install');
 var rmFolders = require('./folders-to-remove');
+var filesToCopy = require('./files-to-copy');
 
 function setup() {
   if (process.argv.length != 3) {
@@ -20,9 +22,11 @@ function setup() {
   }
   console.log("setting up app in " + folder);
 
-  installPackages(folder);
+  //installPackages(folder);
   removeFolders(folder);
-  installFiles(folder);
+  installFiles(folder, function () {
+    console.log("Setup COMPLETE");
+  });
 }
 
 function installPackages(folder) {
@@ -43,13 +47,18 @@ function removeFolders(folder) {
   rmFolders.forEach(function (name) {
     var fullPath = folder + name;
     console.log("rimraf: " + fullPath);
-    //commands.push('rimref ' + fullPath);
     rimraf(fullPath);
   });
   process.chdir(pwd);
 }
 
-function installFiles(folder) {
+function installFiles(folder, cb) {
+  var fileList = [];
+  filesToCopy.forEach(function (path) {
+    fileList.push(path);
+  });
+  fileList.push(folder);
+  copyFiles(fileList, cb);
 }
 
 function checkFolder(folder) {

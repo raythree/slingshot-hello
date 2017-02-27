@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/raythree/slingshot-hello#readme",
   "dependencies": {
+    "async": "^2.1.5",
     "copyfiles": "^1.2.0",
     "rimraf": "^2.6.1"
   }
