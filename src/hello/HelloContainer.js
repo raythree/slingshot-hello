@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import objectAssign from 'object-assign';
 
@@ -31,8 +31,5 @@ function mapDispatchToProps(dispatch) {
     getBoundActions(dispatch).hello()
   );
 }
-
-Container.propTypes = {
-};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Container);

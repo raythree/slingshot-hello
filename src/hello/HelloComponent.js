@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
 
 export default class HelloComponent extends React.Component {
   constructor(props) {
@@ -43,3 +43,11 @@ export default class HelloComponent extends React.Component {
     );
   }
 }
+
+HelloComponent.propTypes = {
+  hello: PropTypes.object,
+  sayHello: PropTypes.func,
+  sayHelloAsync: PropTypes.func,
+  pending: PropTypes.bool,
+  message: PropTypes.string
+};

@@ -4,10 +4,9 @@ import configureStore from '../store/configureStore';
 let dispatch;
 
 beforeEach(() => {
-  resetActionBinder();  
+  resetActionBinder();
   let store = configureStore();
   dispatch = store.dispatch;
-  console.log("store configured");
 });
 
 it('should pass', function () {
