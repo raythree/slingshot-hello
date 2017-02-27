@@ -4,6 +4,5 @@
   "bootstrap",
   "es6-promise",
   "redux-action-binder",
-  "redux-promise-resolver",
-  "simple-console-logger"
+  "redux-promise-resolver"
 ]
