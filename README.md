@@ -6,7 +6,7 @@ React-slingshot is probably the best react starter project. However, the fuel-sa
 Clone react-slingshot, remove the demo, and clone the slingshot-hello repo:
 
 ```
-git clone https://github.com/coryhouse/react-slingshot.git https://github.com/coryhouse/react-slingshot.git
+git clone https://github.com/coryhouse/react-slingshot.git
 
 cd react-slingshot
 npm run setup
