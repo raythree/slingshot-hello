@@ -22,7 +22,7 @@ function setup() {
   }
   console.log("setting up app in " + folder);
 
-  //installPackages(folder);
+  installPackages(folder);
   removeFolders(folder);
   installFiles(folder, function () {
     console.log("Setup COMPLETE");
