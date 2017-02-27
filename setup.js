@@ -56,6 +56,7 @@ function installFiles(folder, cb) {
   var fileList = [];
   filesToCopy.forEach(function (path) {
     fileList.push(path);
+    console.log("copying --> " + path);
   });
   fileList.push(folder);
   copyFiles(fileList, cb);

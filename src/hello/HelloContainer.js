@@ -12,9 +12,7 @@ class Container extends Component {
 
   render() {
     return (
-      <div className="container">
-        <HelloComponent {...this.props} />
-      </div>
+      <HelloComponent {...this.props} />
     );
   }
 }

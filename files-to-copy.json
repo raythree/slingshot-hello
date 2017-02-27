@@ -4,5 +4,6 @@
   "src/hello/**.*",
   "src/store/**.*",
   "src/styles/**.*",
+  "src/common/*/**.*",
   "src/test/**.*"
 ]
