@@ -5,6 +5,5 @@
   "src/reducers",
   "src/actions",
   "src/constants",
-  "src/utils",
-  "src/store"
+  "src/utils"
 ]
