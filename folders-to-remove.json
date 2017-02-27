@@ -5,5 +5,6 @@
   "src/reducers",
   "src/actions",
   "src/constants",
-  "src/utils"
+  "src/utils",
+  "src/store/store.spec.js"
 ]
