@@ -10,7 +10,7 @@ I wanted an app that was ready to run, and could be turned into the start of a p
 3. A single component (HelloComponent).
 4. A style sheet with 1 style.
 5. The default routes ready to go. 
-6. A single test that verifies the initial store and actions.
+6. A single test spec that verifies the initial store.
 
 ## quickstart
 
