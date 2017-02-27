@@ -10,7 +10,7 @@ I wanted an app that was ready to run, and could be turned into the start of a p
 * A single container (HelloContainer).
 * A single component (HelloComponent).
 * A style sheet with 1 style.
-* The default routes ready to go, with a blank App and NotFound components.
+* The default routes ready to go, with a blank App and a NotFound component.
 * A single test spec that verifies the initial store.
 
 **NOTE:** The goal was not touch any of the slingshot files. Currently, this starter does make very minor modifications to ```src/store/configureStore.js``` but this is easy to keep in sync should slingshot enhance this file in the futurte. 
