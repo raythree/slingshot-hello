@@ -5,12 +5,15 @@ The solution is to create your own starter app, structured the way you want, and
 
 I wanted an app that was ready to run, and could be turned into the start of a production app in under a minute, just by renaming a couple of components. This starter has the following:
 
-1. A configured store (hello.js "duck") with one action (sayHello) and one async action (sayHelloAsync).
-2. A single container (HelloContainer).
-3. A single component (HelloComponent).
-4. A style sheet with 1 style.
-5. The default routes ready to go. 
-6. A single test spec that verifies the initial store.
+* An index.js that loads everything.
+* A configured store (hello.js "duck") that handles async actions, with one action (sayHello) and one async action (sayHelloAsync).
+* A single container (HelloContainer).
+* A single component (HelloComponent).
+* A style sheet with 1 style.
+* The default routes ready to go, with a blank App and NotFound components.
+* A single test spec that verifies the initial store.
+
+**NOTE:** The goal was not touch any of the slingshot files. Currently, this starter does make very minor modifications to ```src/store/configureStore.js``` but this is easy to keep in sync should slingshot enhance this file in the futurte. 
 
 ## quickstart
 
@@ -35,7 +38,8 @@ After the setup script completes:
 cd ../react-slingshot
 npm start -s
 ```
-Rename/edit the contents of the "src/hello" folder. 
+Rename/edit the contents of the "src/hello" folder to fit your real app.
+
 
 
 
