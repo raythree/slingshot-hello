@@ -1,7 +1,7 @@
 # slingshot-hello
 React-slingshot is the best React starter project out there, with everything you need for development and production environments. However, the demo app is not going to fit everyone's needs, and after running the ```remove-demo``` script you now have to manually wire up your index.js, store, routes, initial container/components, and third-party packages that you use in production to get a functioning app. 
 
-The solution is to create your own starter app, structured the way you want, and drop that into slingshot starter project after removing the demo.
+The solution is to create your own starter app, structured the way you want, and drop that into the slingshot starter project after removing the demo.
 
 I wanted an app that was ready to run, and could be turned into the start of a production app in under a minute, just by renaming a couple of components. This starter has the following:
 
