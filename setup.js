@@ -35,7 +35,7 @@ function installPackages(folder) {
   console.log("installing " + packages.length + " packages....");
   var commands = [];
   packages.forEach(function (pkg) {
-    commands.push("npm install " + pkg);
+    commands.push("npm install --save " + pkg);
   });
   execAll(commands);
   process.chdir(pwd);

@@ -14,8 +14,9 @@ export default class HelloComponent extends React.Component {
   }
 
   render() {
+    let message = this.props.hello.pending ? 'Please wait...' : this.props.hello.message;
     return (
-      <div className="container">
+      <div>
         <div className="row">
           <div className="col-md-12">
             <h1>Hello App</h1>
@@ -36,7 +37,7 @@ export default class HelloComponent extends React.Component {
         </div>
         <div className="row" style={{marginTop: '1em'}}>
           <div className="col-md-12">
-            {this.props.hello.message}
+            {message}
           </div>
         </div>
       </div>

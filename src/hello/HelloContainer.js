@@ -12,10 +12,8 @@ class Container extends Component {
 
   render() {
     return (
-      <div className="row">
-        <div className="col-md-12">
-          <HelloComponent {...this.props} />
-        </div>
+      <div className="container">
+        <HelloComponent {...this.props} />
       </div>
     );
   }
